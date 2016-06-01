@@ -1,4 +1,4 @@
-node_modules
-.gulp-scss-cache
-gh-pages
-dist
+node_modules/
+.gulp-scss-cache/
+gh-pages/
+dist/
