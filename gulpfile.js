@@ -98,11 +98,19 @@ gulp.task('cache:clear', function (callback) {
   return cache.clearAll(callback)
 });
 
+// Copy
+
+gulp.task('copyjson', function() {
+  return gulp
+    .src('dev/file.json')
+    .pipe(gulp.dest('dist'));
+});
+
 // Build Dist and Run Development
 
 gulp.task('build', function(callback) {
   runSequence('clean:dist', 
-    ['scss', 'useref', 'images', 'fonts'],
+    ['scss', 'useref', 'images', 'fonts', 'copyjson'],
     callback
   );
 });
