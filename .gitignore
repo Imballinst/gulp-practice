@@ -1,2 +1,4 @@
 node_modules
 .gulp-scss-cache
+gh-pages
+dist
