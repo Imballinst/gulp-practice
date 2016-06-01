@@ -10,7 +10,12 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
   <!--endbuild-->
 
+  <!--build:js assets/js/main.min.js -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/load.js"></script>
+  <!--endbuild-->
+
   <!-- Title -->
   <title>
     Gulp Practice
@@ -52,10 +57,10 @@
     test-footer
   </div>
 
+  <script>
+    loadJS("assets/js/main.min.js");
+  </script>
+
   <!-- Javascript -->
-  <!--build:js assets/js/main.min.js -->
-  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <!--endbuild-->
 </body>
 </html>
