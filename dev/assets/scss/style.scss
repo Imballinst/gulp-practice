@@ -16,7 +16,7 @@ html {
 body {
   @extend .base-text;
   background-image: url("../img/bg.jpg");
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   background-size: cover;
 }
 
@@ -52,6 +52,7 @@ body {
   font-size: 12px;
   background-color: $light-brown;
   border-radius: 5px;
+  margin-bottom: 25px;
 }
 
 .content-image {

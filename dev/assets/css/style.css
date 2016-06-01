@@ -9,7 +9,7 @@ html {
 
 body {
   background-image: url("../img/bg.jpg");
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   background-size: cover; }
 
 #header, #footer {
@@ -36,7 +36,8 @@ body {
   padding: 20px;
   font-size: 12px;
   background-color: rgba(114, 143, 206, 0.3);
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-bottom: 25px; }
 
 .content-image {
   text-align: center; }
