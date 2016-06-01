@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 $font-main: 'Roboto', sans-serif;
-$color-main: black;
-$blue-transparent: rgba(149,185,199,0.3);
-$light-brown: rgba(199,163,149,0.3);
+$blue-green: rgba(97,124,88,0.3);
+$light-brown: rgba(114,143,206,0.3);
 
 .base-text {
   font-family: $font-main;
-  color: $color-main;
+  color: black;
+  font-size: 12px;
 }
 
 html {
@@ -26,8 +26,9 @@ body {
   @extend .base-text;
   padding: 10px;
   text-align: center;
-  margin-bottom: 50px;
-  background-color: $blue-transparent;
+  margin-bottom: 70px;
+  font-size: 14px;
+  background-color: $blue-green;
 }
 
 #footer {
@@ -42,7 +43,7 @@ body {
 .title {
   @extend .base-text;
   padding: 10px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
@@ -52,6 +53,7 @@ body {
   padding: 20px;
   font-size: 12px;
   background-color: $light-brown;
+  border-radius: 5px;
 }
 
 .content-image {
