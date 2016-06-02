@@ -85,7 +85,7 @@ gulp.task('images', function(){
 
 // Clear Folder Dist
 gulp.task('clean:dist', function() {
-  return del.sync('dist/');
+  return del.sync(['dist/**/*', '!dist/.git/']);
 });
 
 // Clear Image Cache
