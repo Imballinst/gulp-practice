@@ -7,9 +7,9 @@ $.getJSON("file.json", function(json) {
     // DOM element
     var row = $('<div class="row"></div>');
     var col = $('<div class="col-md-12"></div>');
-    var content = $('<div class="content"></div>');
-    var title = $('<div class="title"></div>');
-    var image = $('<div class="content-image"></div>');
+    var article_box = $('<div class="article-box"></div>');
+    var title = $('<div class="article-title"></div>');
+    var image = $('<div class="article-content-image"></div>');
     var text = $('<p class="base-text"></div>');
     // Image Element
     var imageElement = '<img src="' + article.image + '">';
@@ -20,7 +20,7 @@ $.getJSON("file.json", function(json) {
 
     $(".container").append(row
       .append(col
-        .append(content
+        .append(article_box
           .append(title)
           .append(image)
           .append(text))));

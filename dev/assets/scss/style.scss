@@ -1,15 +1,11 @@
-$font-main: Roboto, sans-serif;
-$blue-green: rgba(97,124,88,0.3);
-$light-brown: rgba(114,143,206,0.6);
+@import 'color-palette';
+@import 'font';
 
 .base-text {
-  font-family: $font-main;
+  font-family: $font-family-roboto;
   color: black;
   font-size: 12px;
-}
-
-.base-header-footer {
-  
+  font-weight: 400;
 }
 
 html {
@@ -36,8 +32,6 @@ body {
 
 #footer {
   @extend .base-text;
-  font-size: 12px;
-  font-weight: 400;
   padding: 10px;
   text-align: center;
   position: absolute;
@@ -47,24 +41,26 @@ body {
   background-color: $blue-green;
 }
 
-.title {
-  @extend .base-text;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
+.article {
+  &-title {
+    @extend .base-text;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
 
-.content {
-  @extend .base-text;
-  padding: 20px;
-  font-size: 12px;
-  background-color: $light-brown;
-  border-radius: 5px;
-  margin-bottom: 25px;
-}
+  &-box {
+    @extend .base-text;
+    padding: 20px;
+    font-size: 12px;
+    background-color: $light-brown;
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
 
-.content-image {
-  text-align: center;
-  margin: 10px 10px;
+  &-content-image {
+    text-align: center;
+    margin: 10px 10px;
+  }
 }

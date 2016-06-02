@@ -20,7 +20,7 @@ var basePaths = {
 
 var paths = {
   src: {
-    scss: basePaths.dev + 'scss/**/*.scss',
+    scss: basePaths.dev + 'scss/[^_]*.scss',
     js: basePaths.dev + 'js/**/*.js',
     img: basePaths.dev + 'img/**/*.+(png|jpg|gif|svg)',
     font: basePaths.dev + 'fonts/**/*'
@@ -73,7 +73,7 @@ gulp.task('useref', function(){
     .pipe(gulp.dest('dist'))
 });
 
-// Minify Images and Fonts
+// Minify Images
 
 gulp.task('images', function(){
   return gulp.src(paths.src.img)
@@ -81,11 +81,6 @@ gulp.task('images', function(){
     interlaced: true
   }))
   .pipe(gulp.dest(paths.dst.img))
-});
-
-gulp.task('fonts', function() {
-  return gulp.src(paths.src.font)
-  .pipe(gulp.dest(paths.dst.font))
 });
 
 // Clear Folder Dist
@@ -99,6 +94,11 @@ gulp.task('cache:clear', function (callback) {
 });
 
 // Copy
+
+gulp.task('fonts', function() {
+  return gulp.src(paths.src.font)
+  .pipe(gulp.dest(paths.dst.font))
+});
 
 gulp.task('copyjson', function() {
   return gulp
