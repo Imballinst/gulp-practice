@@ -4,7 +4,7 @@
 .base-text {
   font-family: $font-family-roboto;
   color: black;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -22,7 +22,7 @@ body {
 
 #header {
   @extend .base-text;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   padding: 10px;
   text-align: center;
@@ -45,7 +45,7 @@ body {
   &-title {
     @extend .base-text;
     padding: 10px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     text-align: center;
   }
@@ -53,7 +53,7 @@ body {
   &-box {
     @extend .base-text;
     padding: 20px;
-    font-size: 12px;
+    font-size: 16px;
     background-color: $light-brown;
     border-radius: 5px;
     margin-bottom: 25px;
